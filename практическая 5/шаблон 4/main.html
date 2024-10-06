@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Метаданные страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <!-- Название вкладки сайта -->
+    <title>Мой сайт</title>
+</head>
+<body>
+
+    <!-- Заголовок страницы (header) -->
+    <header>
+        <div>
+            <!-- Ссылка на домашнюю страницу с логотипом -->
+            <a href="ewfsdf.html">
+                <!-- Логотип сайта -->
+                <img src="logo1.png" alt="Logo">
+            </a>
+        </div>
+        <div class="infa">
+            <!-- Информация о группе и авторе сайта -->
+            Группа ЭФБО-04-23<br>
+            Овчаренко Константин Сергеевич
+        </div>
+        <!-- Навигационное меню сайта -->
+        <nav>
+            <!-- Ссылки на различные страницы сайта -->
+            <a href="main.html">Главная</a>
+            <a href="semester1.html">Первый семестр</a>
+            <a href="#">Второй семестр</a>
+            <a href="uslugi.html">Услуги</a>
+            <a href="#">Авторизация</a>
+        </nav>
+    </header>
+
+    <!-- Боковая панель с навигацией по странице -->
+    <aside>
+        <h3 class="sub-heading">Навигация по странице</h3>
+        <!-- Ссылки для быстрой навигации по странице -->
+        <ul>
+            <li><a href="#frontend">Фронтенд</a></li>
+            <li><a href="#backend">Бэкенд</a></li>
+        </ul>
+    </aside>
+
+    <!-- Основное содержимое страницы -->
+    <div>
+        <h1 class="main-heading" id="main">Добро пожаловать на мой сайт</h1>
+        <section>
+            <!-- Заголовок и приветственное сообщение -->
+            <p class="text-paragraph">Меня зовут Овчаренко Константин Сергеевич и я начинающий специалист по веб-разработке.</p>
+            <!-- Изображение пользователя -->
+            <img src="logo1.png" alt="User Image">
+        </section>
+        <section>
+            <!-- Раздел "Фронтенд" -->
+            <h2 class="semisub-heading" id="frontend">Фронтенд</h2>
+            <p class="text-paragraph">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют язык разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.</p>
+            <!-- Видеоплеер с видео про фронтенд -->
+            <section style="display: flex; justify-content: center;">
+                <video src="video.mp4" controls style="width: 500px; display: flex; justify-content: center;"></video>
+            </section>
+        </section>
+        <section>
+            <!-- Раздел "Бэкенд" -->
+            <h2 class="semisub-heading" id="backend">Бэкенд</h2>
+            <p class="text-paragraph">Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложений. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.</p>
+            <!-- Видеоплеер с видео про бэкенд -->
+            <section style="display: flex; justify-content: center;">
+                <video src="video.mp4" controls style="width: 500px; display: flex; justify-content: center;"></video>
+            </section>
+        </section>
+    </div>
+
+    <!-- Подвал сайта с авторскими правами и ссылкой на Telegram -->
+    <footer>
+        <p>© Овчаренко Константин Сергеевич, 2024</p>
+        <!-- Ссылка на Telegram автора с логотипом -->
+        <a href="https://t.me/Eaglet12IQ">
+            <img src="tg_logo.png" alt="tg_Logo" height="45" width="45">
+        </a>
+    </footer>
+
+</body>
+</html>
