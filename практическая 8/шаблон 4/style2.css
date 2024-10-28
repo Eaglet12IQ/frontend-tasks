@@ -1,0 +1,419 @@
+/* Мобильные устройства (до 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px !important
+    }
+
+    header {
+        flex-direction: column; /* Элементы в шапке располагаются вертикально */
+        align-items: flex-start;
+    }
+
+    header .infa {
+        font-size: 20px !important
+    }
+
+    header nav {
+        font-size: 14px !important
+    }
+
+    table {
+        display: block !important;
+        overflow-x: auto !important
+    }
+
+    .card-container {
+        grid-template-columns: 1fr !important
+    }
+
+    .openFormBtn {
+        width: 100% !important;
+        text-align: center !important
+    }
+
+    .modal-content {
+        width: 90% !important;
+        padding: 15px !important
+    }
+
+    .field input, .field select, .field textarea {
+        font-size: 16px !important;
+    }
+
+    .button_center button {
+        width: 100% !important;
+    }
+}
+
+/* Планшеты (600px - 992px) */
+@media (min-width: 600px) and (max-width: 992px) {
+    body {
+        padding: 15px !important
+    }
+
+    header .infa {
+        font-size: 24px !important
+    }
+
+    header nav {
+        font-size: 16px !important
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr) !important
+    }
+
+    table {
+        width: 100% !important;
+        font-size: 14px !important
+    }
+
+    .modal-content {
+        width: 80% !important;
+    }
+
+    .field input[type="date"] {
+        width: 100% !important;
+    }
+}
+
+/* Десктопы (больше 992px) */
+@media (min-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr) !important
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 160px 20px 20px; /* Увеличиваем верхний отступ */
+    line-height: 1.6;
+}
+
+/* Общие стили для шапки */
+header {
+    background-color: #4CAF50; /* Задаем цвет фона */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Выравнивание элементов по краям */
+    align-items: center; /* Центрирование по вертикали */
+    /* Закрепляем меню */
+    position: fixed;
+    top: 0; /* Закрепляем шапку в верхней части */
+    left: 0; /* Привязываем шапку к левому краю */
+    width: 100%; /* Шапка занимает всю ширину экрана */
+    z-index: 1; /* Выставляем приоритет для перекрытия других элементов */
+    /* Дополнительные стили для адаптации */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Добавим тень для шапки */
+}
+
+    /* Стили для логотипа */
+    header .infa {
+        font-family: 'Arial', sans-serif; /* Тип шрифта для логотипа */
+        font-size: 28px; /* Размер шрифта логотипа */
+        color: #fff; /* Цвет текста */
+        text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    }
+
+    /* Стили для навигации */
+    header nav {
+        font-family: 'Roboto', sans-serif; /* Тип шрифта для текста навигации */
+        font-size: 18px; /* Размер шрифта */
+    }
+
+        header nav a {
+            color: #fff; /* Цвет ссылок */
+            text-decoration: none; /* Убираем подчеркивание ссылок */
+            margin-left: 15px; /* Отступы между ссылками */
+        }
+
+            header nav a:hover {
+                color: #f1f1f1; /* Цвет ссылки при наведении */
+            }
+
+            header nav a:active {
+                color: #ff9900; /* Цвет текста при клике */
+                background-color: #555; /* Фон при клике */
+            }
+
+/* Стили для статьи */
+article {
+    padding: 20px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    background-color: #f9f9f9; /* Цвет фона */
+    margin: 15px 0; /* Внешние отступы */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+/* Стили для секции */
+
+/* Стили для боковой панели */
+aside {
+    padding: 15px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    background-color: #f1f1f1; /* Цвет фона */
+    margin: 15px 0; /* Внешние отступы */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Шрифт для заголовка */
+    font-size: 36px; /* Размер шрифта для h1 */
+    color: #ff6600; /* Цвет текста */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Шрифт для заголовка */
+    font-size: 30px; /* Размер шрифта для h2 */
+    color: #ff9933; /* Цвет текста */
+    margin: 18px 0; /* Отступы сверху и снизу */
+}
+
+h3 {
+    font-family: 'Arial', sans-serif; /* Шрифт для заголовка */
+    font-size: 24px; /* Размер шрифта для h3 */
+    color: #ffcc66; /* Цвет текста */
+    margin: 16px 0; /* Отступы сверху и снизу */
+}
+
+.text-paragraph {
+    font-size: 16px; /* Размер текста */
+    line-height: 1.6; /* Высота строки для удобства чтения */
+    color: #7f8c8d; /* Цвет текста */
+    margin: 15px 0; /* Отступы сверху и снизу */
+}
+
+.main-heading {
+    font-size: 32px; /* Размер шрифта для основного заголовка */
+    color: #2c3e50; /* Цвет основного заголовка */
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.sub-heading {
+    font-size: 24px; /* Размер шрифта для подзаголовка */
+    color: #34495e; /* Цвет подзаголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.semisub-heading {
+    font-size: 20px; /* Размер шрифта */
+    color: #16a085; /* Цвет заголовка (зеленый оттенок) */
+    text-align: left; /* Выравнивание по левому краю */
+    margin-bottom: 10px; /* Отступ снизу */
+    border-bottom: 2px solid #ecf0f1; /* Подчеркнуть линией */
+    padding-bottom: 5px; /* Отступ между текстом и нижней границей */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивные колонки */
+    gap: 20px; /* Пространство между карточками */
+    padding: 20px; /* Внутренние отступы */
+}
+
+img {
+    max-width: 100%; /* Изображения не выходят за пределы контейнера */
+    height: auto; /* Пропорциональное масштабирование */
+}
+
+embed {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    background-color: #e9ecef; /* Цвет фона */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавный переход для эффекта при наведении */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Выравнивание содержимого карточки по центру */
+    max-width: 300px; /* Фиксированная ширина карточки */
+    width: 100%; /* Занимает 100% пространства от родителя */
+    padding: 20px;
+    margin: 0 auto; /* Центрирование карточки */
+    text-align: center;
+}
+
+    .card img {
+        max-width: 100%; /* Максимальная ширина изображения */
+        height: auto; /* Сохраняем пропорции */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Эффект при наведении */
+        border: 2px solid; /* Красная граница для выделения */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Более заметная тень при наведении */
+    }
+
+
+.card.highlight:hover {
+    border: 2px solid #e74c3c; /* Красная граница для выделения */
+    background-color: #f9ebea; /* Светло-красный фон для выделения */
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.4); /* Более интенсивная тень */
+}
+
+.openFormBtn {
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт кнопки */
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s, transform 0.3s; /* Плавные переходы для фона и трансформации */
+}
+
+    .openFormBtn:hover {
+        background-color: #45a049; /* Цвет фона при наведении */
+        transform: scale(1.05); /* Увеличение кнопки при наведении */
+    }
+
+    .openFormBtn:active {
+        background-color: #388e3c; /* Цвет фона при нажатии */
+        transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+    }
+
+.modal {
+    display: none; /* По умолчанию модальное окно скрыто */
+    position: fixed; /* Фиксированное положение на экране */
+    z-index: 1; /* Индекс z для отображения поверх остальных элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    max-width: 90%; /* Ограничение ширины для маленьких экранов */
+    box-sizing: border-box;
+}
+
+/* Стили для формы */
+.form {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+/* Стили для полей */
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+}
+
+    .field input, .field textarea, .field select {
+        width: 100%; /* Поля формы занимают всю ширину */
+    }
+
+        .field input[type="date"] {
+            width: 100px; /* Фиксированная ширина для поля даты */
+        }
+
+    .field textarea {
+        resize: none;
+        height: 75px;
+    }
+
+.button_center {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Цвет границы при фокусировке */
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Стили для таблицы */
+table {
+    overflow-x: auto; /* Добавляем прокрутку */
+    width: 100%; /* Ширина таблицы 100% */
+    border-collapse: collapse; /* Убирает двойные границы между ячейками */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+/* Стили для заголовков таблицы */
+th {
+    background-color: #4CAF50; /* Цвет фона заголовков */
+    color: white; /* Цвет текста заголовков */
+    padding: 12px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста в заголовках */
+    border: 1px solid #ddd; /* Граница для заголовков */
+}
+/* Стили для ячеек таблицы */
+td {
+    padding: 12px; /* Внутренние отступы для ячеек */
+    border: 1px solid #ddd; /* Граница для ячеек */
+    background-color: #f9f9f9; /* Цвет фона ячеек */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+    /* Эффект при наведении на ячейки */
+    td:hover {
+        background-color: #f1f1f1; /* Цвет фона при наведении */
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Авторские права занимают всё пространство, ссылка на Telegram - фиксированное место */
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+    gap: 10px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none; /* Скрыта, пока не прокрутим вниз */
+}
+
+    #scrollTopBtn.show {
+        display: block; /* Появляется, когда прокручено */
+    }
+

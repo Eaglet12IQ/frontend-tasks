@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Метаданные страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <!-- Подключение Bootstrap через CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Мой сайт</title>
+</head>
+<body>
+
+    <!-- Заголовок страницы (header) -->
+    <header class="bg-success text-white p-3 fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Ссылка на домашнюю страницу с логотипом -->
+            <a href="main.html" class="navbar-brand">
+                <img src="logo1.png" alt="Logo" height="50">
+            </a>
+            <div class="infa">
+                <h6 class="mb-0">Группа ЭФБО-04-23</h6>
+                <p class="mb-0">Овчаренко Константин Сергеевич</p>
+            </div>
+            <!-- Навигационное меню сайта -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="main.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="semester1.html">Первый семестр</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Второй семестр</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="uslugi.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Авторизация</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Боковая панель с навигацией по странице -->
+    <aside class="bg-light p-3 mt-5">
+        <h3 class="sub-heading">Навигация по странице</h3>
+        <ul class="list-unstyled">
+            <li><a href="#frontend">Фронтенд</a></li>
+            <li><a href="#backend">Бэкенд</a></li>
+        </ul>
+    </aside>
+
+    <!-- Основное содержимое страницы -->
+    <div class="container mt-5 pt-5">
+        <h1 class="main-heading text-center text-success mb-4">Добро пожаловать на мой сайт</h1>
+        <section class="mb-4">
+            <p class="text-paragraph">Меня зовут Овчаренко Константин Сергеевич и я начинающий специалист по веб-разработке.</p>
+            <img src="logo1.png" alt="User Image" class="img-fluid rounded shadow">
+        </section>
+        <section class="mb-4">
+            <h2 class="semisub-heading text-primary" id="frontend">Фронтенд</h2>
+            <p class="text-paragraph">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют язык разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.</p>
+            <section>
+                <h2 class="semisub-heading text-primary" id="video">Видеоурок</h2>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item" src="video.mp4" allowfullscreen></iframe>
+                </div>
+            </section>
+        </section>
+        <section class="mb-4">
+            <h2 class="semisub-heading text-primary" id="backend">Бэкенд</h2>
+            <p class="text-paragraph">Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложений. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.</p>
+            <section>
+                <h2 class="semisub-heading text-primary" id="video">Видеоурок</h2>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item" src="video.mp4" allowfullscreen></iframe>
+                </div>
+            </section>
+        </section>
+
+        <!-- Аккордеон -->
+        <section class="mb-4">
+            <h2 class="text-success">Дополнительная информация</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Технология 1
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            Описание технологии 1.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Технология 2
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Описание технологии 2.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Технология 3
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Описание технологии 3.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Слайдер -->
+        <section class="mb-4">
+            <h2 class="text-success">Галерея</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="logo1.png" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="tg_logo.png" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="logo1.png" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <button id="scrollTopBtn" class="btn btn-success">Наверх</button>
+
+    <!-- Подвал сайта с авторскими правами и ссылкой на Telegram -->
+    <footer class="bg-light p-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p>© Овчаренко Константин Сергеевич, 2024</p>
+            <a href="https://t.me/Eaglet12IQ">
+                <img src="tg_logo.png" alt="Logo" height="30" width="45">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
